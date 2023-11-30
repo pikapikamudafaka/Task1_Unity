@@ -222,7 +222,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: 45a48cc0262298b46bbd434f54d3bc93, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.51162505, g: 0.8301887, b: 0.47513938, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -243,7 +243,7 @@ GameObject:
   - component: {fileID: 8482348985469373881}
   - component: {fileID: 8482348985469373882}
   m_Layer: 0
-  m_Name: Turret
+  m_Name: Helper1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

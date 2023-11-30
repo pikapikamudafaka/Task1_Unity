@@ -30,8 +30,17 @@ public class Spot : MonoBehaviour
     {
         if (tower != null) return;
 
-        GameObject towerToBuild = BuildManager.main.GetSelectedTower();
-        tower = Instantiate(towerToBuild, transform.position, Quaternion.identity);
+        Tower towerToBuild = BuildManager.main.GetSelectedTower();
+
+        if (towerToBuild.cost > LevelManager.main.currency1)
+        {
+            Debug.Log("cant afford");
+            return;
+        }
+
+        LevelManager.main.SpendCurrency1(towerToBuild.cost);
+
+        tower = Instantiate(towerToBuild.prefab, transform.position, Quaternion.identity);
     }
 
 }
